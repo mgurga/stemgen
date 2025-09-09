@@ -90,6 +90,8 @@ pub struct GenerateArgs {
     pub thread: usize,
     #[arg(long, default_value_t = false)]
     pub preserved_original_as_master: bool,
+    #[arg(long, help = "Outputs stems to separate files in addition to the combined stem", default_value_t = false)]
+    pub split: bool,
 }
 
 #[derive(Debug, Subcommand)]

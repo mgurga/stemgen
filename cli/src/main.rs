@@ -71,7 +71,8 @@ mod tests {
                         device: Device::CPU,
                         model: Model::Local(model_url),
                         thread: 4,
-                        preserved_original_as_master: false
+                        preserved_original_as_master: false,
+                        split: false,
                     }),
                     drum_stem_label,
                     bass_stem_label,
